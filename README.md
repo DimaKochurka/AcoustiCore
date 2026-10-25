@@ -31,7 +31,7 @@ The desktop application receives the audio stream, performs spectral analysis, e
 - **Sound-direction estimation:** stereo cross-correlation for inter-channel delay estimation, presented as Left, Center, or Right.
 - **Real-time visualization:** live frequency spectrum and analysis results in the desktop application.
 
-The sound-source classifier uses predefined signal-processing rules rather than a trained machine-learning model. Direction estimation provides a coarse three-category indication, not a precise angular measurement.
+The rule-based classification approach provides sound-source categorization but is sensitive to overlapping spectral characteristics and variations in input signals. Direction estimation provides a coarse three-category indication, not a precise angular measurement.
 
 ## Desktop Application
 
