@@ -7,7 +7,7 @@ namespace SpectrumAnalyzer.Services;
 
 public class AudioService
 {
-    private const int FftSize = 4096;
+    public int FftSize { get; set; } = 4096;
     public int SampleRate { get; set; } = 44100;
 
     public double[] ProcessFft(double[] audioData, out double spectralCentroid)

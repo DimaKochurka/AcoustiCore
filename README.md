@@ -33,6 +33,14 @@ The desktop application receives the audio stream, performs spectral analysis, e
 
 The rule-based classification approach provides sound-source categorization but is sensitive to overlapping spectral characteristics and variations in input signals. Direction estimation provides a coarse three-category indication, not a precise angular measurement.
 
+## DSP Experiments
+
+Two small experiments evaluate the frequency estimation algorithm under controlled conditions, including the effect of FFT size on accuracy and robustness to additive Gaussian noise.
+
+The experiments include reproducible measurements, CSV datasets, and Python-generated plots.
+
+**[View DSP experiments and results](experiments/README.md)**
+
 ## Desktop Application
 
 The application was developed in **C# with .NET 8 and Avalonia UI**. It uses FftSharp for Fourier transforms, NAudio for file playback and processing, and ScottPlot for spectrum visualization.
@@ -81,6 +89,7 @@ The device was assembled and soldered on perfboard, integrated into the enclosur
 - `firmware/esp32/` — ESP32 firmware and example network configuration
 - `hardware/` — electronics, schematic, enclosure models, and prototype photos
 - `docs/` — system architecture diagram
+- `experiments/` — FFT accuracy and noise robustness experiments, datasets, and plots
 
 ## Getting Started
 
