@@ -1,8 +1,8 @@
-\# DSP Experiments
+# DSP Experiments
 
 
 
-\## Overview
+## Overview
 
 
 
@@ -10,7 +10,7 @@ This directory contains two small experiments evaluating the FFT-based dominant 
 
 
 
-\## FFT Size Evaluation
+## FFT Size Evaluation
 
 
 
@@ -24,8 +24,6 @@ A total of 200 sine waves between 50 Hz and 10 kHz were analyzed at a 44.1 kHz s
 
 | FFT Size | Frame Duration | MAE |
 
-| --- | --- | --- |
-
 | 1024 | 23.22 ms | 10.75 Hz |
 
 | 2048 | 46.44 ms | 5.41 Hz |
@@ -36,7 +34,7 @@ A total of 200 sine waves between 50 Hz and 10 kHz were analyzed at a 44.1 kHz s
 
 
 
-!\[FFT size evaluation](AcoustiCore\_DspExperiments/plots/output/fft\_accuracy.png)
+![FFT size evaluation](AcoustiCore\_DspExperiments/plots/output/fft\_accuracy.png)
 
 
 
@@ -44,7 +42,7 @@ FFT 4096 was retained as a practical compromise between frequency estimation acc
 
 
 
-\## Noise Robustness
+## Noise Robustness
 
 
 
@@ -57,8 +55,6 @@ A 440 Hz sine wave was tested at seven signal-to-noise ratios (SNR), from −10 
 
 
 | SNR | Correct Bin Rate | MAE |
-
-| --- | --- | --- |
 
 | −10 dB | 100.0% | 1.43 Hz |
 
@@ -76,11 +72,11 @@ A 440 Hz sine wave was tested at seven signal-to-noise ratios (SNR), from −10 
 
 
 
-!\[Correct bin rate](AcoustiCore\_DspExperiments/plots/output/noise\_correct\_bin\_rate.png)
+![Correct bin rate](AcoustiCore\_DspExperiments/plots/output/noise\_correct\_bin\_rate.png)
 
 
 
-!\[Frequency estimation error](AcoustiCore\_DspExperiments/plots/output/noise\_mae.png)
+![Frequency estimation error](AcoustiCore\_DspExperiments/plots/output/noise\_mae.png)
 
 
 
